@@ -1,13 +1,13 @@
 import '@/global.css'
 import { Link } from 'expo-router'
-import { Text } from 'react-native'
 import { styled } from 'nativewind'
+import { Text } from 'react-native'
 import { SafeAreaView as RNSafeAreaView } from 'react-native-safe-area-context'
 const SafeAreaView = styled(RNSafeAreaView)
 export default function App() {
     return (
         <SafeAreaView className="flex-1 bg-background p-5">
-            <Text className="text-3xl text-success font-black">This is Aman Verma</Text>
+            <Text className="text-7xl font-sans-extrabold">Home</Text>
             <Link href="/onboarding" className="bg-primary text-white rounded p-4 mt-4 font-bold text-xl">
                 Go to Onboarding
             </Link>
@@ -17,9 +17,9 @@ export default function App() {
             <Link href="/sign-up" className="bg-primary text-white rounded p-4 mt-4 font-bold text-xl">
                 Sign Up
             </Link>
-            <Link href="/subscriptions/spotify" className="bg-primary text-white rounded p-4 mt-4 font-bold text-xl">
+            {/* <Link href="/subscriptions/spotify" className="bg-primary text-white rounded p-4 mt-4 font-bold text-xl">
                 Spotify Sub
-            </Link>
+            </Link> */}
             {/* <Link
                 href={{ pathname: '/subscriptions/[id]', params: { id: 'spotify' } }}
                 className="bg-primary text-white rounded p-4 mt-4 font-bold text-xl"
